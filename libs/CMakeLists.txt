@@ -1,0 +1,6 @@
+include(${PROJECT_SOURCE_DIR}/libs/algorithms/CMakeLists.txt)
+include(${PROJECT_SOURCE_DIR}/libs/data_structures/CMakeLists.txt)
+include(${PROJECT_SOURCE_DIR}/libs/la/CMakeLists.txt)
+include(${PROJECT_SOURCE_DIR}/libs/staging/CMakeLists.txt)
+include(${PROJECT_SOURCE_DIR}/libs/test/CMakeLists.txt)
+include(${PROJECT_SOURCE_DIR}/libs/utils/CMakeLists.txt)

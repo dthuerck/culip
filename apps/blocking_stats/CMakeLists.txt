@@ -1,0 +1,19 @@
+if(BUILD_APP_BLOCKING_STATS)
+    cuda_add_executable(culip-blocking-stats
+        ${PROJECT_SOURCE_DIR}/apps/blocking_stats/blocking_stats.cc)
+    target_link_libraries(culip-blocking-stats
+        ${LIBS_UTILS}
+        ${LIBS_STAGING}
+        ${LIBS_LA}
+        ${LIBS_TEST}
+        ${LIBS_ALGORITHMS}
+        ${LIBS_DATA_STRUCTURES}
+        ${DEPENDENCY_CBLAS}
+        ${DEPENDENCY_LAPACKE}
+        ${DEPENDENCY_SPRAL}
+        ${DEPENDENCY_METIS}
+        ${DEPENDENCY_MMIO}
+	${DEPENDENCY_OPENBLAS}
+        ${DEVICE_LIBRARIES})
+endif(BUILD_APP_BLOCKING_STATS)
+

@@ -1,0 +1,59 @@
+# use a white list
+*
+!*/
+
+# whitelist CMakeFiles
+!/apps/*/CMakeLists.txt
+!/libs/**/CMakeLists.txt
+!/dependencies/CMakeLists.txt
+!/dependencies/cub/CMakeLists.txt
+!/dependencies/metis/CMakeLists.txt
+!/dependencies/mmio/CMakeLists.txt
+!/dependencies/openblas/CMakeLists.txt
+!/dependencies/optionparser/CMakeLists.txt
+!/dependencies/patoh/CMakeLists.txt
+!/dependencies/spral/CMakeLists.txt
+!/tests/**/CMakeLists.txt
+
+# libs code
+!/libs/**/*.h
+!/libs/**/*.cuh
+!/libs/**/*.cc
+!/libs/**/*.cu
+
+# application code
+!/apps/*/*.h
+!/apps/*/*.cc
+
+# test code and data
+!/tests/**/*.cc
+!/tests/**/*.h
+!/tests/**/*.mtx
+
+# Staging stuff
+!/tests/staging/Eigen/**/*
+!/tests/staging/Unsupported/**/*
+
+# matlab and scripts
+!/matlab/*
+!/scripts/*
+
+# top level
+!build_parameters_host.cmake
+!build_parameters_device.cmake
+!LICENSE
+!README.md
+!CMakeLists.txt
+!/doc/*
+
+# misc
+!.gitignore
+
+# fixes
+dependencies/metis/include/CMakeLists.txt
+dependencies/metis/metis-5.1.0/CMakeLists.txt
+dependencies/metis/metis-5.1.0/GKlib/CMakeLists.txt
+dependencies/metis/metis-5.1.0/GKlib/test/CMakeLists.txt
+dependencies/metis/metis-5.1.0/include/CMakeLists.txt
+dependencies/metis/metis-5.1.0/libmetis/CMakeLists.txt
+dependencies/metis/metis-5.1.0/programs/CMakeLists.txt
