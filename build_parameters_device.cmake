@@ -7,7 +7,7 @@ endif(BUILD_PARAMETERS_DEVICE_INCLUDED)
 set(CUDA_HOST_COMPILATION_CPP ON)
 set(CUDA_SEPARABLE_COMPILATION ON)
 # note: use semicolon to list multiple architectures
-set(CUDA_CC "35;50;70")
+set(CUDA_CC "35;50;52;60;61;70")
 set(CUDA_PROPAGATE_HOST_FLAGS ON)
 
 # force using CUDA package
